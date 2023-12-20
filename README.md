@@ -4,9 +4,8 @@
   - Detta projekt syftar till att skapa en IoT-lösning för att mäta och övervaka fuktighetsnivåer med hjälp av en ESP8266-mikrocontroller och Azure-molntjänster. 
    Lösningen kommer att samla in data från en fuktighetssensor och överföra den till Azure IoT Hub för bearbetning och visualisering.
 
+
 - Projektkomponenter
-  
-![](https://github.com/Pempan/IoT-Projekt-Temperatursensor/blob/main/Ska%CC%88rmavbild%202023-12-20%20kl.%2021.21.25.png)
 
 
   - ESP8266-mikrocontroller: Används för att ansluta och samla in data från fuktighetssensorn samt kommunicera med Azure IoT Hub.
@@ -16,17 +15,20 @@
     realtid.
 
 - Översikt
-  ************BILD
+  ![](https://github.com/Pempan/IoT-Projekt-Temperatursensor/blob/main/Projektbeskrivning%202023-12-20%20kl.%2021.59.12.png)
+
 
 - Kopplingsschema
+
+  ![](https://github.com/Pempan/IoT-Projekt-Temperatursensor/blob/main/Ska%CC%88rmavbild%202023-12-20%20kl.%2021.21.25.png)
   
   - ESP8266-modul (t.ex., NodeMCU eller Wemos D1 Mini)
   - Fuktighetssensor (t.ex., DHT11 eller DHT22)
   - Anslutningskablar
   - En dator med Arduino IDE installerat
-  *********KORT TEXT SAMT BILDER
   
-- **Installation**
+  
+- **Installationer**
   - För att installera och använda de nödvändiga biblioteken i Arduino IDE för projektet, följ dessa steg:
     1. Ladda ner och installera den senaste versionen av Arduino IDE från [Arduinos officiella webbplats](https://www.arduino.cc/en/software).
     2. Installera ESP8266-kortpaketet i Arduino IDE genom att lägga till följande URL i inställningarna för ytterligare kortadministratörer: 
@@ -39,8 +41,8 @@
 - Uppstart
   - **Användare och temperatursensor:** En användare använder en temperatursensor för att mäta och samla in temperaturdata från omgivningen.
 
-  - **IoT-enhet:** En IoT-enhet, som exempelvis ESP8266 i ditt projekt, fungerar som en datainsamlingsenhet. Den ansluter till temperatursensorn och samlar in 
-      temperaturdata       regelbundet.
+  - **IoT-enhet:** En IoT-enhet, som exempelvis ESP8266 i mitt projekt, fungerar som en datainsamlingsenhet. Den ansluter till temperatursensorn och samlar in 
+      temperaturdata regelbundet.
 
   - **Kommunikation:** IoT-enheten skickar den insamlade temperaturdatan till Azure IoT Hub. Detta kan göras med hjälp av en säker och pålitlig anslutning för att       
       säkerställa dataintegritet och konfidentialitet.
@@ -51,10 +53,16 @@
  - För att ansluta din IoT-enhet till ditt WiFi-nätverk, använd följande kod i config.h-filen:
  - Ersätt "Ditt_WiFi_SSID" och "Ditt_WiFi_lösenord" med ditt faktiska WiFi-nätverks SSID (namn) och lösenord.
 
+   ![](https://github.com/Pempan/IoT-Projekt-Temperatursensor/blob/main/Config%202023-12-20%20kl.%2017.43.05.png)
+
+
 - Konfigurera Azure IoT Hub-anslutning:
   - För att ansluta din IoT-enhet till Azure IoT Hub, använd följande kod i config.h-filen:
   - Ersätt "Ditt_Azure_IoT_Hub_värddator", "Din_Enhet_ID", och "Din_Enhet_Nyckel" med dina specifika uppgifter från din Azure IoT Hub-konfiguration.
   - När du har uppdaterat dessa inställningar med dina egna värden, är din IoT-enhet redo att ansluta till både WiFi och Azure IoT Hub i ditt projekt.
+ 
+    ![](https://github.com/Pempan/IoT-Projekt-Temperatursensor/blob/main/Azure%20ID%202023-12-20%20kl.%2017.44.41.png)
+
  
 
 
