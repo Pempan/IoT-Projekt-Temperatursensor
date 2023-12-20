@@ -5,6 +5,10 @@
    Lösningen kommer att samla in data från en fuktighetssensor och överföra den till Azure IoT Hub för bearbetning och visualisering.
 
 - Projektkomponenter
+  
+![](https://github.com/Pempan/IoT-Projekt-Temperatursensor/blob/main/Ska%CC%88rmavbild%202023-12-20%20kl.%2021.21.25.png)
+
+
   - ESP8266-mikrocontroller: Används för att ansluta och samla in data från fuktighetssensorn samt kommunicera med Azure IoT Hub.
     Fuktighetssensor: En sensor som mäter fuktighetsnivåer i omgivningen.
     Azure IoT Hub: En molntjänst som agerar som navet för datainsamling och -hantering. Den tar emot och lagrar data från ESP8266-enheten.
