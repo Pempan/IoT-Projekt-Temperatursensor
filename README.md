@@ -49,6 +49,9 @@
   - **Datahantering:** Inom Azure IoT Hub hanteras den inkommande temperaturdatan och kan sedan vidarebefordras till andra Azure-tjänster för lagring, bearbetning eller   
       analys, beroende på användningsområdet.
 
+    ![](https://github.com/Pempan/IoT-Projekt-Temperatursensor/blob/main/IoT%20Hub%20Messages%202023-12-20%20kl.%2017.33.33.png)
+
+
 - Konfigurera WiFi-anslutning:
  - För att ansluta din IoT-enhet till ditt WiFi-nätverk, använd följande kod i config.h-filen:
  - Ersätt "Ditt_WiFi_SSID" och "Ditt_WiFi_lösenord" med ditt faktiska WiFi-nätverks SSID (namn) och lösenord.
@@ -83,15 +86,12 @@
  
 
 - Azure Functions Integration
-
   - Datainsamling: ESP8266-mikrokontrollenheten samlar in fuktighetsdata från fuktighetsmätaren och förbereder den för överföring.
   - Azure IoT Hub: Data överförs från ESP8266 till Azure IoT Hub, som fungerar som en bro mellan enheten och Azure Cloud.
   - Azure Functions: En Azure Function aktiveras av inkommande data från IoT Hub. Den tar emot datan, bearbetar den och formaterar den enligt projektets behov.
 
 - Funktionens syfte:
-
   - Azure Function i detta projekt har följande syfte:
- 
   - Data Transformation: Den tar emot rå fuktighetsdata från IoT Hub och omvandlar den till ett mer strukturerat format om det behövs.
   - Data Validation: Funktionen kan utföra validering av inkommande data och verifiera att den är inom de önskade gränserna.
   - Data Lagring: Den sparar den bearbetade datan i Azure Storage för senare åtkomst och analys.
