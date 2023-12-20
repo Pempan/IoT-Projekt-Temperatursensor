@@ -156,7 +156,11 @@
     relevant information om fuktnivåer och eventuella avvikelser.
 
     Slutligen möjliggör projektet visualisering av fuktnivådata i realtid med hjälp av Power BI, vilket ger användarna en omfattande lösning för övervakning och analys av 
-    fuktighetsförhållanden i den aktuella miljön.  
+    fuktighetsförhållanden i den aktuella miljön.
+
+
+**Skapat av Pamela Lelo**
+    
       
 
 
