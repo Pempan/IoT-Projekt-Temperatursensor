@@ -1,4 +1,4 @@
-# IoT-Projekt-Temperatursensor
+# IoT-Projekt-FuktighetsensorMätning
 
 - Projekt beskrivning
   - Detta projekt syftar till att skapa en IoT-lösning för att mäta och övervaka fuktighetsnivåer med hjälp av en ESP8266-mikrocontroller och Azure-molntjänster. 
